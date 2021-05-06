@@ -12,86 +12,100 @@
 </head>
 
 <body>
+    <div class="Jumbotron" style="background-color:white;">
+        <div class="container-fluid">
+            <div class="border mb-auto">
+                <h2 class="text-primary p-1 pl-4 ">Search</h2>
+            </div>
+            <div class="row row-content pl-md-3 ">
+                <form class="form-inline ">
+                    <span class="col-md-3 col-sm-12 pt-sm-2">
+                        <select class="form-select form-control" aria-label="Default select example">
+                            <option value="name" selected>Name </option>
+                            <option value="Year">Year</option>
+                            <option value="Email">Email</option>
+                            <option value="Department">Department</option>
+                        </select>
+                    </span>
+                    <span class="col-md-3 col-sm-12 pt-sm-2">
+                        <select class="form-select form-control" aria-label="Default select example">
+                            <option selected value="all">All </option>
+                            <option value="First">First year</option>
+                            <option value="Second">Second year</option>
+                            <option value="Third">Third year</option>
+                            <option value="Fourth">Fourth year</option>
+                        </select>
+                    </span>
+                    <span class="col-md-3 col-sm-12 pt-sm-2"> <input type="search" id="search" value=""
+                            class="form-control" placeholder="shaharyar">
+                    </span>
+                    <span class="col-md-2  col-sm-6 offset-1 pt-sm-2"><button type="button"
+                            class="btn btn-success">Search</button></span>
+                </form>
+            </div>
 
-    <div class="container ">
-        <div class="row border">
-            <div class="col-12 ">
-                <h3 class="text-primary">Search</h3>
+            <div class="border">
+                <h3 class="text-success p-1 pl-4">Search Results</h3>
+                <div class="table-responsive">
+                    <table class="table table-hover  container-fluid">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Year</th>
+                                <th scope="col">Contact No</th>
+                                <th scope="col">Depart</th>
+                                <th scope="col">Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Larry</td>
+                                <td>lary@mail.com</td>
+                                <td>First</td>
+                                <td>090078601</td>
+                                <td>Electrical</td>
+                                <td><a href="">View Details</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Larry</td>
+                                <td>lary@mail.com</td>
+                                <td>First</td>
+                                <td>090078601</td>
+                                <td>Electrical</td>
+                                <td><a href="">View Details</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>lary@mail.com</td>
+                                <td>First</td>
+                                <td>090078601</td>
+                                <td>Electrical</td>
+                                <td><a href="">View Details</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
-        <br />
-        <div class="row">
-            <form class="form-inline">
-                <span class="col-md-3 col-sm-12">
-                    <select class="form-select form-control" aria-label="Default select example">
-                        <option value="name" selected>Name </option>
-                        <option value="Year">Year</option>
-                        <option value="Email">Email</option>
-                        <option value="Department">Department</option>
-                    </select>
-                </span>
-                <span class="col-md-3 col-sm-12">
-                    <select class="form-select form-control" aria-label="Default select example">
-                        <option selected value="all">All </option>
-                        <option value="First">First year</option>
-                        <option value="Second">Second year</option>
-                        <option value="Third">Third year</option>
-                        <option value="Fourth">Fourth year</option>
-                    </select>
-                </span>
-                <span class="col-md-3 col-sm-12"> <input type="search" id="search" value="" class="form-control"
-                        placeholder="shaharyar">
-                </span>
-                <span class="col-md-3 col-sm-12"><button type="button" class="btn btn-success">Search</button></span>
-            </form>
-        </div>
-        <br>
-        <div class="row">
-            <h4 class="text-center text-success">Search Results</h4>
-        </div><br>
-        <table class="table border">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Year</th>
-                    <th scope="col">Contact No</th>
-                    <th scope="col">Depart</th>
-                    <th scope="col">Details</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Larry</td>
-                    <td>lary@mail.com</td>
-                    <td>First</td>
-                    <td>090078601</td>
-                    <td>Electrical</td>
-                    <td><a href="">View Details</a></td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Larry</td>
-                    <td>lary@mail.com</td>
-                    <td>First</td>
-                    <td>090078601</td>
-                    <td>Electrical</td>
-                    <td><a href="">View Details</a></td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>lary@mail.com</td>
-                    <td>First</td>
-                    <td>090078601</td>
-                    <td>Electrical</td>
-                    <td><a href="">View Details</a></td>
-                </tr>
-            </tbody>
-        </table>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
